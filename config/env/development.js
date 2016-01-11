@@ -1,9 +1,9 @@
 'use strict';
 
 module.exports = {
-	db: 'mongodb://localhost/jugueteria-dev',
+	db: 'mongodb://localhost/northwindnode-dev',
 	app: {
-		title: 'jugueteria - Development Environment'
+		title: 'NorthwindNode - Development Environment'
 	},
 	facebook: {
 		clientID: process.env.FACEBOOK_ID || 'APP_ID',

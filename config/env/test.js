@@ -1,10 +1,10 @@
 'use strict';
 
 module.exports = {
-	db: 'mongodb://localhost/jugueteria-test',
+	db: 'mongodb://localhost/northwindnode-test',
 	port: 3001,
 	app: {
-		title: 'jugueteria - Test Environment'
+		title: 'NorthwindNode - Test Environment'
 	},
 	facebook: {
 		clientID: process.env.FACEBOOK_ID || 'APP_ID',
