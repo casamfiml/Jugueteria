@@ -6,17 +6,17 @@
 var should = require('should'),
 	mongoose = require('mongoose'),
 	User = mongoose.model('User'),
-	Category = mongoose.model('Category');
+	Kart = mongoose.model('Kart');
 
 /**
  * Globals
  */
-var user, category;
+var user, kart;
 
 /**
  * Unit tests
  */
-describe('Category Model Unit Tests:', function() {
+describe('Kart Model Unit Tests:', function() {
 	beforeEach(function(done) {
 		user = new User({
 			firstName: 'Full',
@@ -28,11 +28,9 @@ describe('Category Model Unit Tests:', function() {
 		});
 
 		user.save(function() { 
-			category = new Category({
+			kart = new Kart({
 				// Add model fields
-				// ...
-                name:'Test',
-                description:'A test description'
+				// ... 
 			});
 
 			done();
@@ -41,7 +39,7 @@ describe('Category Model Unit Tests:', function() {
 
 	describe('Method Save', function() {
 		it('should be able to save without problems', function(done) {
-			return category.save(function(err) {
+			return kart.save(function(err) {
 				should.not.exist(err);
 				done();
 			});
@@ -49,7 +47,7 @@ describe('Category Model Unit Tests:', function() {
 	});
 
 	afterEach(function(done) { 
-		Category.remove().exec();
+		Kart.remove().exec();
 		User.remove().exec();
 
 		done();

@@ -47,7 +47,11 @@ var ProductSchema = new Schema({
 	discontinued: {
 		type: Boolean,
 		default: false
-	}
+	},
+    image:{
+        type: String,
+    }
 });
+
 
 mongoose.model('Product', ProductSchema);
