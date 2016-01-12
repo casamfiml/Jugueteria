@@ -47,10 +47,7 @@ var ProductSchema = new Schema({
 	discontinued: {
 		type: Boolean,
 		default: false
-	},
-    image:{
-        type: String,
-    }
+	}
 });
 
 
