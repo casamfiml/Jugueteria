@@ -31,6 +31,8 @@ describe('Category Model Unit Tests:', function() {
 			category = new Category({
 				// Add model fields
 				// ...
+                name:'Test',
+                description:'A test description'
 			});
 
 			done();

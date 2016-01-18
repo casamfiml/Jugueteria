@@ -59,7 +59,13 @@
 		it('$scope.find() should create an array with at least one Product object fetched from XHR', inject(function(Products) {
 			// Create sample Product using the Products service
 			var sampleProduct = new Products({
-				name: 'New Product'
+				name: 'New Product',
+                category:'',
+                quantityPerUnit:'',
+                unitPrice:'',
+                unitsInStock:'',
+                unitsOnOrder:'',
+                discontinued:''
 			});
 
 			// Create a sample Products array that includes the new Product

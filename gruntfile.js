@@ -172,6 +172,12 @@ module.exports = function(grunt) {
 	// Build task(s).
 	grunt.registerTask('build', ['lint', 'loadConfig', 'ngAnnotate', 'uglify', 'cssmin']);
 
+	// Server tests task.
+	grunt.registerTask('test-server', ['env:test', 'mochaTest']);
+
+	// Client tests task.
+	grunt.registerTask('test-client', ['env:test', 'karma:unit']);
+
 	// Test task.
 	grunt.registerTask('test', ['env:test', 'mochaTest', 'karma:unit']);
 };
